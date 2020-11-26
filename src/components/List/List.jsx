@@ -8,7 +8,8 @@ import classes from "./List.module.css";
 
 function List(props) {
   const [inputText, setInputText] = useState("");
- 
+  const [cards, setCards] = useState([]);
+
   function inputValue(event) {
     const newItem = event.target.value;
     setInputText(newItem);
